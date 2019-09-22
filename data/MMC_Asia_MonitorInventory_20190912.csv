@@ -1,0 +1,45 @@
+﻿ID,geoID,Hub,Sex,Age,Nationality,InterviewLanguage,Education,contractStartDate,contractEndDate,training,operationalLocationCountry,RegionCity,Reports,AvgReports,Latitude,Longitude
+25,Asia-AF01,Asia,Male,31,Afghan,Persian ,BA and above,16-Oct,19-Dec,Full in-person training,Afghanistan,Kabul,149,15,34.540487,69.175108
+26,Asia-AF02,Asia,Male,35,Afghan,Persian ,BA and above,16-Oct,19-Dec,Full in-person training,Afghanistan,Kabul,171,15,34.540487,69.175108
+27,Asia-AF03,Asia,Female,35,Afghan,Persian ,BA and above,16-Oct,19-Dec,Full in-person training,Afghanistan,Kabul,154,15,34.540487,69.175108
+28,Asia-AF04,Asia,Male,24,Afghan,Persian ,BA and above,16-Oct,19-Dec,Full in-person training,Afghanistan,Balkh,184,15,36.763035,66.899638
+29,Asia-AF05,Asia,Female,22,Afghan,Persian ,BA and above,16-Oct,19-Dec,Full in-person training,Afghanistan,Balkh,184,15,36.763035,66.899638
+30,Asia-AF06,Asia,Male,23,Afghan,Persian ,BA and above,16-Oct,19-Dec,Full in-person training,Afghanistan,Herat,174,15,34.3553,62.208409
+31,Asia-AF07,Asia,Male,27,Afghan,Persian ,Up to High School,16-Oct,19-Dec,Full in-person training,Afghanistan,Herat,152,15,34.3553,62.208409
+32,Asia-AF08,Asia,Female,18,Afghan,Persian ,Up to High School,16-Oct,19-Dec,Full in-person training,Afghanistan,Herat,155,15,34.3553,62.208409
+33,Asia-AF09,Asia,Female,29,Afghan,Persian ,Up to High School,16-Oct,19-Dec,Full in-person training,Afghanistan,Nangarhar,173,15,34.246684,70.506646
+34,Asia-AF10,Asia,Male,28,Afghan,Persian ,Up to High School,16-Oct,19-Dec,Full in-person training,Afghanistan,Nangarhar,176,15,34.246684,70.506646
+35,Asia-AF11,Asia,Male,26,Afghan,Persian ,BA and above,16-Oct,19-Dec,Full in-person training,Afghanistan,Nangarhar,174,15,34.246684,70.506646
+36,Asia-AF12,Asia,Male,28,Afghan,Persian ,BA and above,16-Oct,19-Dec,Full in-person training,Afghanistan,Kandahar,163,15,31.636378,65.759785
+37,Asia-AF13,Asia,Female,24,Afghan,Persian ,Up to High School,18-Oct,19-Dec,Full in-person training,Afghanistan,Kandahar,155,15,31.636378,65.759785
+38,Asia-AF14,Asia,Male,26,Afghan,Persian ,Up to High School,16-Oct,19-Dec,Full in-person training,Afghanistan,Kandahar,163,15,31.636378,65.759785
+39,Asia-AF15,Asia,Male,28,Afghan,Persian ,Up to High School,16-Oct,19-Dec,Full in-person training,Afghanistan,Kunduz,177,15,36.715454,68.878226
+40,Asia-AF16,Asia,Male,30,Afghan,Persian ,Up to High School,16-Oct,19-Dec,Full in-person training,Afghanistan,Kunduz,176,15,36.715454,68.878226
+41,Asia-AF17,Asia,Male,40,Afghan,Persian ,Up to High School,16-Oct,19-Dec,Full in-person training,Afghanistan,Nimruz,175,15,30.970419,61.844529
+42,Asia-AF18,Asia,Female,33,Afghan,Persian ,Up to High School,16-Oct,19-Dec,Full in-person training,Afghanistan,Nimruz,176,15,30.970419,61.844529
+43,Asia-AF19,Asia,Male,28,Afghan,Persian ,BA and above,18-Mar,19-Dec,Full in-person training,Afghanistan,Nimruz,140,15,30.970419,61.844529
+44,Asia-India01,Asia,Male,43,Afghan,Persian ,BA and above,18-Apr,19-Dec,Full in-person training,India,New Delhi,75,7,28.58497,77.246265
+45,Asia-India02,Asia,Female,23,Afghan,Persian ,BA and above,18-Apr,19-Dec,Full in-person training,India,New Delhi,75,7,28.58497,77.246265
+46,Asia-India03,Asia,Male,25,Afghan,Persian ,BA and above,18-Apr,19-Dec,Full in-person training,India,New Delhi,75,7,28.58497,77.246265
+47,Asia-India04,Asia,Male,30,Afghan,Persian ,BA and above,18-Apr,19-Dec,Full in-person training,India,New Delhi,75,7,28.567482,77.242433
+48,Asia-India05,Asia,Female,26,Afghan,Persian ,BA and above,18-Apr,19-Dec,Full in-person training,India,New Delhi,75,7,28.567482,77.242433
+49,Asia-Indo01,Asia,Male,26,Afghan,Persian ,Up to High School,18-Apr,19-Dec,Full in-person training,Indonesia,Jakarta,90,10,-6.189429,106.843243
+50,Asia-Indo02,Asia,Male,31,Afghan,Persian ,BA and above,18-Apr,19-Dec,Full in-person training,Indonesia,Bogor,115,12,-6.514287,106.797429
+51,Asia-Indo03,Asia,Male,36,Afghan,Persian ,BA and above,18-Apr,19-Dec,Full in-person training,Indonesia,Bogor,128,13,-6.514287,106.797429
+52,Asia-Indo04,Asia,Female,25,Afghan,Persian ,Up to High School,18-Apr,19-Dec,Full in-person training,Indonesia,Jakarta,90,10,-6.189429,106.843243
+53,Asia-Indo05,Asia,Male,33,Afghan,Persian ,Up to High School,18-Apr,19-Dec,Full in-person training,Indonesia,Jakarta,119,12,-6.189429,106.843243
+54,Asia-Indo06,Asia,Female,22,Afghan,Persian ,Up to High School,18-Apr,19-Dec,Full in-person training,Indonesia,Jakarta,90,10,-6.189429,106.843243
+55,Asia-Ger01,Asia,Male,30,Afghan,Persian ,Up to High School,18-Apr,19-Dec,Full in-person training,Germany,Berlin,45,5,52.50689,13.426095
+56,Asia-Ger02,Asia,Male,27,Afghan,Persian ,BA and above,18-Apr,19-Dec,Full in-person training,Germany,Berlin,40,5,52.50689,13.426095
+57,Asia-Ger03,Asia,Male,28,Afghan,Persian ,BA and above,18-Apr,19-Dec,Full in-person training,Germany,Berlin,45,5,52.50689,13.426095
+58,Asia-Ger04,Asia,Male,25,Afghan,Persian ,BA and above,18-Apr,19-Dec,Full in-person training,Germany,Berlin,45,5,52.50689,13.426095
+59,Asia-Gre01,Asia,Male,23,Afghan,Persian ,Up to High School,18-Sep,not contracted for 2019 yet,Full in-person training,Greece,Athens,12,4,37.990288,23.730271
+60,Asia-Gre02,Asia,Male,27,Afghan,Persian ,BA and above,18-Sep,not contracted for 2019 yet,Full in-person training,Greece,Athens,15,5,37.990288,23.730271
+61,Asia-Gre03,Asia,Female,25,Afghan,Persian ,Up to High School,18-Sep,not contracted for 2019 yet,Full in-person training,Greece,Lesbos,15,5,39.250747,26.285896
+62,Asia-Mal01,Asia,Female,22,Myanmar,Rohingya & Burmese,Up to High School,1-Oct-18,19-Dec,Full in-person training,Malaysia,Kuala Lumpur,40,10,3.144672,101.690767
+63,Asia-Mal02,Asia,Male,21,Myanmar,Rohingya & Burmese,Up to High School,1-Oct-18,19-Dec,Full in-person training,Malaysia,Kuala Lumpur,40,10,3.144672,101.690767
+64,Asia-Mal03,Asia,Female,23,Myanmar,Rohingya & Burmese,Up to High School,1-Oct-18,19-Dec,Full in-person training,Malaysia,Kuala Lumpur,40,10,3.144672,101.690767
+65,Asia-Mal04,Asia,Female,32,Myanmar,Rohingya,BA and above,1-Oct-18,19-Dec,Full in-person training,Malaysia,Kuala Lumpur,40,10,3.144672,101.690767
+66,Asia-Mal05,Asia,Male,31,Myanmar,Rohingya & Burmese,BA and above,19-Apr,19-Dec,Full in-person training,Malaysia,Ampang,20,10,3.337318,101.249006
+67,Asia-Mal06,Asia,Male,38,Myanmar,Bangla,BA and above,19-Apr,19-Dec,Full in-person training,Malaysia,Kuala Lumpur,20,10,3.144672,101.690767
+68,Asia-Mal07,Asia,Male,30,Bangladeshi,Bangla,Up to High School,19-Apr,19-Dec,Full in-person training,Malaysia,Kuala Lumpur,20,10,3.144672,101.690767
