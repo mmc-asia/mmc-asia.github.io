@@ -37,19 +37,24 @@
         });
  
 			for ( var i = 0; i < mmcAsia.length; ++i )
-				{
-				var popup =   '<h5 align="center">4Mi Monitor details</h5>'+	
-							  '<b>ID</b>: '+ mmcAsia[i].geoID +
-				              '<br/><b>Country</b>: ' + mmcAsia[i].operationalLocationCountry +
-				              '<br/><b>Interview language</b>: ' + mmcAsia[i].InterviewLanguage +
-				              '<br/><b>Contract start date: </b> ' + mmcAsia[i].contractStartDate +
-				              '<br/><b>Contract end date: </b> ' + mmcAsia[i].contractEndDate;
-				 
-				var m = L.marker([mmcAsia[i].Latitude, mmcAsia[i].Longitude])
-				                  .bindPopup( popup );
-				 
-				markerClusters.addLayer(m);
+                {
+                var popup =   '<h5 align="center">4Mi Monitor details</h5>'+    
+                              '<b>ID</b>: '+ mmcAsia[i].geoID +
+                              '<br/><b>Country</b>: ' + mmcAsia[i].operationalLocationCountry +
+                              '<br/><b>City</b>: ' + mmcAsia[i].RegionCity+
+                              '<br/><b>Number of reports</b>: ' + mmcAsia[i].Reports+
+                              '<br/><b>Interview language</b>: ' + mmcAsia[i].InterviewLanguage +
+                              '<br/><b>Contract start date: </b> ' + mmcAsia[i].contractStartDate +
+                              '<br/><b>Contract end date: </b> ' + mmcAsia[i].contractEndDate;
+                 
+                var m = L.marker([mmcAsia[i].Latitude, mmcAsia[i].Longitude])
+                                  .bindPopup( popup );
 
-				}
+                markerClusters.addLayer(m);
 
-		map.addLayer(markerClusters);
+                }
+
+        map.addLayer(markerClusters);
+
+
+        map.fitBounds(allLayers.getBounds());
