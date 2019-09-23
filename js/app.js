@@ -32,7 +32,9 @@
     
 		
          // adding monitors details
-        var markerClusters = L.markerClusterGroup();
+        var markerClusters = L.markerClusterGroup({
+        	maxClusterRadius: 50
+        });
  
 			for ( var i = 0; i < mmcAsia.length; ++i )
 				{
