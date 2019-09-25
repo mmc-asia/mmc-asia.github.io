@@ -62,22 +62,22 @@
 		 //var allMonitors = L.geoJson(allMonitors, {style: myStyle}).addTo(map);
 		 var afghanistan = L.geoJson(afghanistan, {style: myStyle}).bindTooltip(
 		 	'<h4>Afghanistan</h4>MMC Asia has set up its monitors <br>in three different regions <br> of Afghanistan since (insert year).<br>Total number of reports until <br>present is: '
-		 	+ Number(totalAfghanistanReports));
+		 	+ Number(totalAfghanistanReports), {direction: 'left'});
 		 var india = L.geoJson(india, {style: myStyle}).bindTooltip(
 		 	'<h4>India</h4>MMC Asia has set up its monitors <br>in New Delhi, India in (insert year)<br>Total number of reports until <br>present is: '
-		 	+ Number(totalIndiaReports));		
+		 	+ Number(totalIndiaReports), {direction: 'center'});		
          var indonesia = L.geoJson(indonesia, {style: myStyle}).bindTooltip(
 		 	'<h4>Indonesia</h4>MMC Asia has set up its monitors <br>in Indonesia in (insert year)<br>Total number of reports until <br>present is: '
-		 	+ Number(totalIndonesiaReports));		
+		 	+ Number(totalIndonesiaReports), {direction: 'center'});		
          var greece = L.geoJson(greece, {style: myStyle}).bindTooltip(
 		 	'<h4>Greece</h4>MMC Asia has set up its monitors <br>in Greece in (insert year)<br>Total number of reports until <br>present is: '
-		 	+ Number(totalGreeceReports));			
+		 	+ Number(totalGreeceReports), {direction: 'left'});			
          var germany = L.geoJson(germany, {style: myStyle}).bindTooltip(
 		 	'<h4>Germany</h4>MMC Asia has set up its monitors <br>in Germany in (insert year)<br>Total number of reports until <br>present is: '
-		 	+ Number(totalGermanyReports));		
+		 	+ Number(totalGermanyReports), {direction: 'left'});		
          var malaysia = L.geoJson(malaysia, {style: myStyle}).bindTooltip(
 		 	'<h4>Malaysia</h4>MMC Asia has set up its monitors <br>in Malaysia in (insert year)<br>Total number of reports until <br>present is: '
-		 	+ Number(totalMalaysiaReports));		
+		 	+ Number(totalMalaysiaReports), {direction: 'right'});		
 
          var allLayers = L.layerGroup([afghanistan, india, indonesia, greece,germany, malaysia])
          					.addTo(map);
