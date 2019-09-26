@@ -62,22 +62,22 @@
 		 //var allMonitors = L.geoJson(allMonitors, {style: myStyle}).addTo(map);
 		 var afghanistan = L.geoJson(afghanistan, {style: myStyle}).bindTooltip(
 		 	'<h4>Afghanistan</h4>MMC Asia has set up its monitors <br>in three different regions <br> of Afghanistan since (insert year).<br>Total number of reports until <br>present is: '
-		 	+ Number(totalAfghanistanReports), {direction: 'left'});
+		 	+ Number(totalAfghanistanReports), {direction: 'left', sticky: 'true'});
 		 var india = L.geoJson(india, {style: myStyle}).bindTooltip(
 		 	'<h4>India</h4>MMC Asia has set up its monitors <br>in New Delhi, India in (insert year)<br>Total number of reports until <br>present is: '
-		 	+ Number(totalIndiaReports), {direction: 'center'});		
+		 	+ Number(totalIndiaReports), {direction: 'right', sticky: 'true'});		
          var indonesia = L.geoJson(indonesia, {style: myStyle}).bindTooltip(
 		 	'<h4>Indonesia</h4>MMC Asia has set up its monitors <br>in Indonesia in (insert year)<br>Total number of reports until <br>present is: '
-		 	+ Number(totalIndonesiaReports), {direction: 'center'});		
+		 	+ Number(totalIndonesiaReports), {direction: 'left', sticky: 'true'});		
          var greece = L.geoJson(greece, {style: myStyle}).bindTooltip(
 		 	'<h4>Greece</h4>MMC Asia has set up its monitors <br>in Greece in (insert year)<br>Total number of reports until <br>present is: '
-		 	+ Number(totalGreeceReports), {direction: 'left'});			
+		 	+ Number(totalGreeceReports), {direction: 'left', sticky: 'true'});			
          var germany = L.geoJson(germany, {style: myStyle}).bindTooltip(
 		 	'<h4>Germany</h4>MMC Asia has set up its monitors <br>in Germany in (insert year)<br>Total number of reports until <br>present is: '
-		 	+ Number(totalGermanyReports), {direction: 'left'});		
+		 	+ Number(totalGermanyReports), {direction: 'left', sticky: 'true'});		
          var malaysia = L.geoJson(malaysia, {style: myStyle}).bindTooltip(
 		 	'<h4>Malaysia</h4>MMC Asia has set up its monitors <br>in Malaysia in (insert year)<br>Total number of reports until <br>present is: '
-		 	+ Number(totalMalaysiaReports), {direction: 'right'});		
+		 	+ Number(totalMalaysiaReports), {direction: 'right', sticky: 'true'});		
 
          var allLayers = L.layerGroup([afghanistan, india, indonesia, greece,germany, malaysia])
          					.addTo(map);
