@@ -92,7 +92,7 @@
  
 			for ( var i = 0; i < mmcAsia.length; ++i )
 				{
-				var popup =   '<h5 align="center">4Mi Monitor details</h5>'+	
+				var popup =   '<h5 style="background-color:#009ba4; color: #F8F8FF; text-align: center">4Mi Monitor details</h5>'+	
 							  '<b>ID</b>: '+ mmcAsia[i].geoID +
 				              '<br/><b>Country</b>: ' + mmcAsia[i].operationalLocationCountry +
 				              '<br/><b>City</b>: ' + mmcAsia[i].RegionCity+
