@@ -1,5 +1,5 @@
 
-         // Creating map options
+		 // Creating map options
          var mapOptions = {
             center: [27.930862, 69.143627],
             zoom: 3, minZoom: 3, maxZoom: 8
@@ -19,13 +19,7 @@
          }).addTo(map);
 
 
-         // creating map color
-
-         var myStyle = {
-			"color": "#009ba4",
-			"weight": 0.25,
-			"fillOpacity": 0.7
-			};
+         
 
 		// calculate total number of reports per country
 		 var totalAfghanistanReports = 0;
@@ -58,32 +52,56 @@
 				}
 			
 		}
+		// creating map color
+
+         var myStyle = {
+			"fillColor": "#009ba4",
+			"weight": 0.75,
+			"color":'white',
+			"fillOpacity": 0.75
+			}; 
+
+		 var mmcStyle = {
+		 	"color":"#F2F2F2",
+		 	"weight":0,
+		 	"fillOpacity":0
+		 };
+
+	
+
+		 var allCountries = L.geoJson(allCountries, {style: myStyle});
+
 
 		 //var allMonitors = L.geoJson(allMonitors, {style: myStyle}).addTo(map);
-		 var afghanistan = L.geoJson(afghanistan, {style: myStyle}).bindTooltip(
+		 var afghanistan = L.geoJson(afghanistan,{weight:0, style: mmcStyle}).bindTooltip(
 		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspAfghanistan</h4>MMC Asia has set up its monitors <br>in three different regions <br> of Afghanistan since (insert year).<br>Total number of reports until <br>present is: '
 		 	+ Number(totalAfghanistanReports), {direction: 'left', sticky: 'true'});
-		 var india = L.geoJson(india, {style: myStyle}).bindTooltip(
+		 var india = L.geoJson(india,{weight:0, style: mmcStyle}).bindTooltip(
 		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspIndia</h4>MMC Asia has set up its monitors <br>in New Delhi, India in (insert year)<br>Total number of reports until <br>present is: '
 		 	+ Number(totalIndiaReports), {direction: 'right', sticky: 'true'});		
-         var indonesia = L.geoJson(indonesia, {style: myStyle}).bindTooltip(
+         var indonesia = L.geoJson(indonesia,{weight:0, style: mmcStyle}).bindTooltip(
 		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspIndonesia</h4>MMC Asia has set up its monitors <br>in Indonesia in (insert year)<br>Total number of reports until <br>present is: '
 		 	+ Number(totalIndonesiaReports), {direction: 'left', sticky: 'true'});		
-         var greece = L.geoJson(greece, {style: myStyle}).bindTooltip(
+         var greece = L.geoJson(greece,{weight:0, style: mmcStyle}).bindTooltip(
 		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspGreece</h4>MMC Asia has set up its monitors <br>in Greece in (insert year)<br>Total number of reports until <br>present is: '
 		 	+ Number(totalGreeceReports), {direction: 'left', sticky: 'true'});			
-         var germany = L.geoJson(germany, {style: myStyle}).bindTooltip(
+         var germany = L.geoJson(germany,{weight:0, style: mmcStyle}).bindTooltip(
 		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspGermany</h4>MMC Asia has set up its monitors <br>in Germany in (insert year)<br>Total number of reports until <br>present is: '
 		 	+ Number(totalGermanyReports), {direction: 'left', sticky: 'true'});		
-         var malaysia = L.geoJson(malaysia, {style: myStyle}).bindTooltip(
+         var malaysia = L.geoJson(malaysia,{weight:0, style: mmcStyle}).bindTooltip(
 		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspMalaysia</h4>MMC Asia has set up its monitors <br>in Malaysia in (insert year)<br>Total number of reports until <br>present is: '
-		 	+ Number(totalMalaysiaReports), {direction: 'right', sticky: 'true'});		
+		 	+ Number(totalMalaysiaReports), {direction: 'right', sticky: 'true'});	
 
-         var allLayers = L.layerGroup([afghanistan, india, indonesia, greece,germany, malaysia])
+		 		
+
+         var allLayers = L.layerGroup([afghanistan, india, indonesia, greece,germany, malaysia, allCountries])
          					.addTo(map);
 		 
 		
-		 
+
+
+
+
          // adding monitors details
         var markerClusters = L.markerClusterGroup({
         	maxClusterRadius: 50,
@@ -107,4 +125,5 @@
 				}
 
 		map.addLayer(markerClusters);
+
 
