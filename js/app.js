@@ -96,7 +96,7 @@
 		 	+ Number(totalGermanyReports), {direction: 'left', sticky: 'true'});		
          
          var malaysia = L.geoJson(malaysia,{weight:0, style: mmcStyle}).bindTooltip(
-		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspMalaysia</h4><p>MMC Asia has set up its monitors <br> Ampang and Kuala Lumpur.<br>Total number of reports until <br>present is: '
+		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspMalaysia</h4><p>MMC Asia has set up its monitors <br> in Ampang and Kuala Lumpur.<br>Total number of reports until <br>present is: '
 		 	+ Number(totalMalaysiaReports), {direction: 'right', sticky: 'true'});	
 
 		 		
