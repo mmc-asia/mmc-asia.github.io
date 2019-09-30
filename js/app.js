@@ -106,7 +106,16 @@
 		 
 		
 		
+         // making own icon marker
+         	
 
+       var userIcon = L.AwesomeMarkers.icon({
+		icon: 'glyphicon-user',
+		prefix: 'glyphicon',
+		markerColor: 'darkred',
+		iconColor: 'white'
+
+		});
 
          // adding monitors details
         var markerClusters = L.markerClusterGroup({
@@ -123,7 +132,7 @@
 				              '<br/><b>Number of reports</b>: ' + mmcAsia[i].Reports+
 				              '<br/><b>Interview language</b>: ' + mmcAsia[i].InterviewLanguage;
 				 
-				var m = L.marker([mmcAsia[i].Latitude, mmcAsia[i].Longitude])
+				var m = L.marker([mmcAsia[i].Latitude, mmcAsia[i].Longitude], {icon: userIcon})
 				                  .bindPopup( popup );
 
 				markerClusters.addLayer(m);
@@ -131,5 +140,17 @@
 				}
 
 		map.addLayer(markerClusters);
+
+	// reset function
+	function resetAll(){
+		map.setView([31.915450, 52.209181], 2)
+		}
+	// activating reset button	
+	$(document).ready(function(){	
+		$(document).on("click", "#reset-map", function(){
+		resetAll();
+	});
+	});
+
 
 
