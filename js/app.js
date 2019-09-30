@@ -2,7 +2,7 @@
 		 // Creating map options
           var mapOptions = {
             center: [31.915450, 52.209181],
-            zoom: 2, minZoom: 2, maxZoom: 6
+            zoom: 2, minZoom: 2, maxZoom: 7
          }
          
          // Creating a map object
