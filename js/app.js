@@ -110,7 +110,7 @@
 
          // adding monitors details
         var markerClusters = L.markerClusterGroup({
-        	maxClusterRadius: 50,
+        	maxClusterRadius: 30,
         	zoomToBoundsOnClick: true
         });
  
