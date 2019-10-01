@@ -51,7 +51,7 @@ a {
 
 .navbar {
     top: 10px;
-    left: 58px;
+    left: 70px;
     right: 30px;
     margin-bottom: 0
 }
@@ -60,22 +60,9 @@ footer {
     bottom: 0
 }
 
-.navbar-brand {
-    padding: 0
-}
-
-.navbar-brand > img {
-    height: 100%;
-    padding: 5px;
-    width: auto
-}
 
 .nav > li > a:focus, .nav > li > a:hover {
     color: #7bc142
-}
-
-li.right + li.right {
-    margin-left: 5px
 }
 
 
