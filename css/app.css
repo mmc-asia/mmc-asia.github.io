@@ -155,15 +155,10 @@ footer {
     color: #7bc142
 }
 
-.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
-    color: #fff;
-    background-color: #7bc142
+li.right + li.right {
+    margin-left: 5px
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0
-}
 
 @media(min-width:992px) {
     .modal-lg {
@@ -234,12 +229,6 @@ p.copyright {
     border-radius: 3px
 }
 
-.hubLabel {
-    background: rgba(255, 255, 255, 0);
-    border: 0;
-    border-radius: 0;
-    box-shadow: 0 0 0
-}
 
 .marker-cluster-small {
     background-color: rgba(181, 226, 140, .6)
