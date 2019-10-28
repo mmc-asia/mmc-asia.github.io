@@ -25,7 +25,6 @@
 		 var totalAfghanistanReports = 0;
 		 var totalIndiaReports = 0;
 		 var totalIndonesiaReports = 0;
-		 var totalGreeceReports = 0;
 		 var totalMalaysiaReports = 0;
 		 var totalGermanyReports = 0;
 
@@ -40,9 +39,6 @@
 				}
 				else if (mmcAsia[i].operationalLocationCountry ==='Indonesia') {
 					totalIndonesiaReports += mmcAsia[i].Reports;
-				}
-				else if (mmcAsia[i].operationalLocationCountry ==='Greece') {
-					totalGreeceReports += mmcAsia[i].Reports;
 				}
 				else if (mmcAsia[i].operationalLocationCountry ==='Malaysia') {
 					totalMalaysiaReports += mmcAsia[i].Reports;
@@ -87,9 +83,7 @@
 		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspIndonesia</h4><p>MMC Asia has set up its monitors <br>in Bogor and Jakarta.<br>Total number of reports until <br>present is: '
 		 	+ Number(totalIndonesiaReports), {direction: 'left', sticky: 'true'});		
          
-         var greece = L.geoJson(greece,{weight:0, style: mmcStyle}).bindTooltip(
-		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspGreece</h4><p>MMC Asia has set up its monitors <br>in Athens and Lesbos.<br>Total number of reports until <br>present is: '
-		 	+ Number(totalGreeceReports), {direction: 'left', sticky: 'true'});			
+         		
          
          var germany = L.geoJson(germany,{weight:0, style: mmcStyle}).bindTooltip(
 		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspGermany</h4><p>MMC Asia has set up its monitors <br>in Berlin.<br>Total number of reports until <br>present is: '
@@ -101,7 +95,7 @@
 
 		 		
 
-         var allLayers = L.layerGroup([afghanistan, india, indonesia, greece,germany, malaysia, allCountries])
+         var allLayers = L.layerGroup([afghanistan, india, indonesia,germany, malaysia, allCountries])
          					.addTo(map);
 		 
 		
