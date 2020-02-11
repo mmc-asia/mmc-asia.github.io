@@ -1,8 +1,8 @@
 
 		 // Creating map options
          var mapOptions = {
-            center: [31.915450, 52.209181],
-            zoom: 2, minZoom: 2, maxZoom: 7
+            center: [21.618089, 79.653338],
+            zoom: 3, minZoom: 3, maxZoom: 7
          }
          
          // Creating a map object
@@ -26,7 +26,6 @@
 		 var totalIndiaReports = 0;
 		 var totalIndonesiaReports = 0;
 		 var totalMalaysiaReports = 0;
-		 var totalGermanyReports = 0;
 
 			for (var i = 0; i < mmcAsia.length; i++){
 				
@@ -42,9 +41,6 @@
 				}
 				else if (mmcAsia[i].operationalLocationCountry ==='Malaysia') {
 					totalMalaysiaReports += mmcAsia[i].Reports;
-				}
-				else if (mmcAsia[i].operationalLocationCountry ==='Germany') {
-					totalGermanyReports += mmcAsia[i].Reports;
 				}
 			
 		}
@@ -83,11 +79,7 @@
 		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspIndonesia</h4><p>MMC Asia has set up its monitors <br>in Bogor and Jakarta.<br>Total number of reports until <br>present is: '
 		 	+ Number(totalIndonesiaReports), {direction: 'left', sticky: 'true'});		
          
-         		
-         
-         var germany = L.geoJson(germany,{weight:0, style: mmcStyle}).bindTooltip(
-		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspGermany</h4><p>MMC Asia has set up its monitors <br>in Berlin.<br>Total number of reports until <br>present is: '
-		 	+ Number(totalGermanyReports), {direction: 'left', sticky: 'true'});		
+         	
          
          var malaysia = L.geoJson(malaysia,{weight:0, style: mmcStyle}).bindTooltip(
 		 	'<h4 style="background-color:#009ba4; color: #F8F8FF;">&nbspMalaysia</h4><p>MMC Asia has set up its monitors <br> in Ampang and Kuala Lumpur.<br>Total number of reports until <br>present is: '
@@ -95,7 +87,7 @@
 
 		 		
 
-         var allLayers = L.layerGroup([afghanistan, india, indonesia,germany, malaysia, allCountries])
+         var allLayers = L.layerGroup([afghanistan, india, indonesia, malaysia, allCountries])
          					.addTo(map);
 		 
 		
@@ -137,7 +129,7 @@
 
 	// reset function
 	function resetAll(){
-		map.setView([31.915450, 52.209181], 2)
+		map.setView([21.618089, 79.653338], 3)
 		}
 	// activating reset button	
 	$(document).ready(function(){	
