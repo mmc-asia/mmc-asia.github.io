@@ -360,21 +360,6 @@ var mmcAsia = [
     "Longitude": 77.242433
   },
   {
-    "ID": 48,
-    "geoID": "Asia-India05",
-    "Hub": "Asia",
-    "Sex": "Female",
-    "InterviewLanguage": "Dari / Pashto",
-    "contractStartDate": "18-Apr",
-    "contractEndDate": "19-Dec",
-    "operationalLocationCountry": "India",
-    "RegionCity": "New Delhi",
-    "Reports": 75,
-    "AvgReports": 7,
-    "Latitude": 28.567482,
-    "Longitude": 77.242433
-  },
-  {
     "ID": 49,
     "geoID": "Asia-Indo01",
     "Hub": "Asia",
